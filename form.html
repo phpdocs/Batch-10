@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>HTML Form</title>
+</head>
+<body>
+    <center>
+        <h1>Inroduction to HTML Forms</h1>
+    </center>
+
+    <!--HTML Form Start-->
+    <form>
+        <p>Name: <input type="text" name="txtName" required placeholder="Please Enter your Full Name" size=25 /> </p>
+        <p>Password: <input type="password" name="txtPassword" required /></p>
+        <p>Father Name: <input type="text" name="txtFatherName"  required placeholder="Please Enter Your Full Father Name"/> </p>
+        <p>Upload your Pictue:<input type="file" name="txtPicture" /></p>
+        <p>
+            Highest Education:
+            <select name="selDegree">
+                <option value="Select">---Select---</option>
+                <option value="BS4">BS (4 Years)</option>
+                <option value="BS2">BS (2 Years)</option>
+                <option value="Inter">Inter</option>
+                <option value="Metric">Metric</option>
+            </select>
+        </p>
+        <p>
+            Gender:<br />
+                Male <input type="radio" name="txtGender" value="Male" checked />
+                Female<input type="radio" name="txtGender" Value="FeMale" />
+        </p>
+        <p>Email:<input type="email" name="txtEmail" required /> </p>
+        <p>Contact Details:<input type="number" name="txtContact" required /> </p>
+        <p>DOB: <input type="date" name="txtDOB"  required/> </p>
+        <p>Address:</p>
+        <p>
+            <textarea name="txtAddress" rows="4" cols="50" required>
+
+            </textarea>
+        </p>
+        <p>Do you agree with Above Information?<input type="checkbox" name="chkAgree" />
+
+        <p>
+            <input type="reset" value="Clear" />
+            <input type="submit" value="send" name="btnSend" />
+        </p>
+    </form>
+    <!--HTML Form End-->
+
+</body>
+</html>

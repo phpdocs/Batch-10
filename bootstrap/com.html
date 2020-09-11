@@ -16,12 +16,47 @@
     .bg-dark{
         background-color:#9b59b6 !important;
     }
+    .footer-color{
+      background-color:#95a5a6;
+      color:#ffff;
+      height:100px;
+    }
     i{
         //color:white !important;
     }
     </style>
   </head>
   <body>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Login/Signup</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="row justify-content-center">
+            <div class="col-12">
+              <input type="text" name="txtUserName" required placeholder="Username" class="form-control" />
+            </div>
+          </div>
+          <div class="row justify-content-center mt-2">
+              <div class="col-12">
+                <input type="Password" name="txtPassword" required placeholder="Password" class="form-control"/>
+              </div>
+            </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Clear</button>
+          <button type="button" class="btn btn-primary">Login</button>
+        </div>
+      </div>
+    </div>
+  </div>
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
                 <a class="navbar-brand" href="#">WebsiteName</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -40,6 +75,9 @@
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">Contact US</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" data-toggle="modal" data-target="#exampleModal">Login</a>
                     </li>
                   </ul>
 
@@ -89,7 +127,7 @@
 
         <!--About us Section-->
         <div class="row justify-content-center mt-5 mb-3">
-            <div class="col-2">
+            <div class="col-12 text-center">
                 <h1>ABOUT US</h1>
             </div>
         </div>
@@ -119,7 +157,7 @@
 
         <!--Services Section-->
         <div class="row justify-content-center mt-5 mb-3">
-          <div class="col-1">
+          <div class="col-12 text-center">
             <h1>SERVICES</h1>
           </div>
         </div>
@@ -152,7 +190,7 @@
 
         <!--FAQ Section Start-->
         <div class="row justify-content-center mt-5 mb-3  ">
-          <div class="col-1">
+          <div class="col-12 text-center">
             <h1>FAQ's</h1>
           </div>
         </div>
@@ -209,7 +247,7 @@
 
         <!--Social Media Section-->
         <div class="row justify-content-center mt-5 mb-3">
-          <div class="col-2">
+          <div class="col-12 text-center">
             <h1>Follow us @</h1>
           </div>
         </div>
@@ -231,13 +269,66 @@
         
         <!--Contact us Form Section-->
         <div class="row justify-content-center mt-5 mb-3">
-            <div class="col-2">
+            <div class="col-12 text-center">
               <h1>Contact us</h1>
             </div>
         </div>
+        <form >
+        <div class="row justify-content-center">
+            <div class="col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3">
+              <input type="text" name="txtFirstName" class="form-control"  required placeholder="First Name"/>
+            </div>
+            <div class="col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3">
+              <input type="text" name="txtLastName" class="form-control" required placeholder="Last Name" />
+            </div>
+        </div>
+        <div class="row justify-content-center mt-2">
+            <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+              <input type="text" name="txtEmail" class="form-control" required placeholder="Email" />
+            </div>
+          </div>
+        <div class="row justify-content-center mt-2">
+          <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+            <input type="text" name="txtSubject" class="form-control" required placeholder="Subject" />
+          </div>
+        </div>
+        <div class="row justify-content-center mt-2">
+            <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+              <textarea name="txtMessage"  class="form-control" required placeholder="Message" rows=10></textarea>
+            </div>
+        </div>
+
+        <div class="row justify-content-center mt-2 mb-5">
+          <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 text-center">
+            <input type="reset" value="Clear" class="btn btn-danger" />
+            <input type="submit" name="btnSubmit" value="Send Message"class="btn btn-primary " />
+          </div>
+        </div>
+      </form>
         <!--Contact us Form Section End-->
         
         <!--Footer Secton Start-->
+        <div class="row justify-content-center mt-2 mb-5">
+          <div class="col-12 col-sm-12 col-md-4 col-lg-3 col-xl-3 text-center border-right">
+            <i class="fa fa-phone fa-3x" aria-hidden="true"></i>
+            <p>+92-333-1111111</p>
+          </div>
+          <div class="col-12 col-sm-12 col-md-4 col-lg-3 col-xl-3 text-center border-right">
+            <i class="fa fa-envelope fa-3x" aria-hidden="true"></i>
+            <p>info@bootstrap.com</p>
+          </div>
+          <div class="col-12 col-sm-12 col-md-4 col-lg-3 col-xl-3 text-center">
+            <i class="fa fa-map fa-3x" aria-hidden="true"></i>
+            <p>Floor#9, Room#38 Arfa Software Technology Park, Lahore</p>
+          </div>
+        </div>
+        
+
+        <div class="row justify-content-center mt-2 footer-color">
+          <div class="col-12 text-center  my-5" >
+            <p>Erozgaar &copy; 2016-2025</p>
+          </div>
+        </div>
         <!--Footer Section End-->
       </div>
     <!-- Optional JavaScript -->
